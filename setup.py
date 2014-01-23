@@ -33,5 +33,6 @@ setup(name='django-oscar-rosetta',
           'Topic :: Other/Nonlisted Topic'],
       install_requires=[
           'django-rosetta>=0.7',
+      ],
       )
 
