@@ -1,5 +1,10 @@
 {% extends "dashboard/layout.html" %}
 
+{% block extrastyles %}
+<!-- <link rel="stylesheet" type="text/css" href="/static/css/styles.css"> -->
+<style type="text/css" media="screen"> {% include 'rosetta/static/css/styles.css' %} </style>
+{% endblock %}
+
 {% block dashboard_content %}
 <h1>&nbsp;</h1>
     <ul class="object-tools">
@@ -17,7 +22,7 @@
 
         <div class="module">
             <h2>{{language}}</h2>
-            <table cellspacing="0">
+            <table cellspacing="0" class="table table-striped table-bordered">
                 <thead>
                     <tr>
                         <th>{% trans "Application" %}</th>

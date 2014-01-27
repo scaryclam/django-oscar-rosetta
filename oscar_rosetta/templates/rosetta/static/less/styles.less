@@ -1,0 +1,131 @@
+.box-sizing() {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+table.table {
+	td.translation {
+		textarea {
+			height: 120px;
+			resize: none;
+		}
+	}
+}
+
+.translate-menu {
+	width: 100%;
+	margin-left: 0;
+	li {
+		background-color: #F8F8F8;
+		border: 1px solid #ccc;
+		display: block;
+		margin-bottom: 15px;
+		padding: 12px;
+		color: #878787;
+		font-size: 12px;
+		width: 20%;
+		float: left;
+		.box-sizing;
+		&.nobubble {
+			font-weight: bold;
+		}
+	}
+}
+
+.translate-searchbar {
+	input#searchbar {
+		height: 20px;
+		border-top-right-radius: 0;
+		-webkit-border-top-right-radius: 0;
+		-moz-border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		-webkit-border-bottom-right-radius: 0;
+		-moz-border-bottom-right-radius: 0;
+	}
+	input[type=submit] {
+		margin-top: -10px;
+		margin-left: -4px;
+		height: 30px;
+	}
+}
+
+p.paginator {
+	text-align: center;
+}
+
+.page-pagination {
+	text-align: center;
+}
+
+
+@media only screen 
+and (max-width: 800px) {
+	.submit-row {
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+	.translate-menu {
+		li {
+			width: 100%;
+			margin-bottom: 0;
+		}
+	}
+	.translate-searchbar {
+		float: left;
+		margin-top: 10px;
+	}
+	.table-bordered {
+		display: block;
+		thead, tbody, th, td, tr { 
+			display: block; 
+		}
+		thead {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+		tr {
+			width: 100%;
+			float: left;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #bbbbbb;
+			border-right: 1px solid #bbbbbb;
+		}
+		td {
+			width: 100%;
+			float: left;
+			.box-sizing;
+			text-align: center;
+			&.translation {
+				textarea {
+					width: 90%;
+				}
+			}
+		}
+	}
+}
+
+// table resizing
+@media only screen 
+and (max-width: 1100px) and (min-width: 900px) {
+	table.table {
+		td.translation {
+			textarea {
+				width: 300px;
+			}
+		}
+	}
+}
+
+@media only screen
+and (max-width: 899px) and (min-width: 801px) {
+	table.table {
+		td.translation {
+			textarea {
+				width: 200px;
+			}
+		}
+	}
+}
